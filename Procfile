@@ -1,2 +1,1 @@
-web: gunicorn embedded_projects_assistant.wsgi --log-file -
-release: python manage.py migrate
+web: python manage.py migrate && gunicorn embedded_projects_assistant.wsgi --log-file -
