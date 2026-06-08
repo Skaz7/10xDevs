@@ -34,7 +34,6 @@ ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "localhost,127.0.0.1").split(",")
 # CSRF settings for Railway deployment
 CSRF_TRUSTED_ORIGINS = [
     "https://web-production-4a09c.up.railway.app",
-    "https://*.railway.app",
 ]
 
 
